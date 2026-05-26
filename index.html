@@ -10,7 +10,6 @@
 body{font-family:'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a}
 a{text-decoration:none;cursor:pointer}
 
-/* NAV */
 nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;align-items:center;padding:0 2rem;gap:2rem;position:sticky;top:0;z-index:900}
 .logo{font-size:21px;font-weight:700;color:#0f3460;letter-spacing:-.5px;cursor:pointer}
 .logo span{color:#c9a84c}
@@ -19,7 +18,7 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .nav-mid a:hover,.nav-mid a.act{color:#0f3460;font-weight:500}
 .nav-right{display:flex;gap:10px;align-items:center}
 .btn-nav{padding:8px 16px;border-radius:8px;font-size:13px;cursor:pointer;border:none}
-.btn-outline{background:#fff;border:.5px solid #0f3460 !important;color:#0f3460}
+.btn-outline{background:#fff;border:.5px solid #0f3460!important;color:#0f3460}
 .btn-outline:hover{background:#f0f4fb}
 .btn-solid{background:#0f3460;color:#fff}
 .btn-solid:hover{background:#1a4a80}
@@ -28,7 +27,6 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .user-chip-av{width:30px;height:30px;border-radius:50%;background:#0f3460;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600}
 .user-chip span{font-size:13px;color:#333}
 
-/* HOME */
 #pg-home{display:block}
 .home-hero{background:linear-gradient(135deg,#0f3460 60%,#1a5490);padding:4rem 2rem 3rem;text-align:center}
 .home-hero h1{color:#fff;font-size:34px;font-weight:700;margin-bottom:.4rem}
@@ -38,20 +36,16 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .op-tab.act{background:#fff;color:#0f3460;font-weight:600}
 .hero-search{background:#fff;border-radius:14px;padding:1.1rem 1.25rem;max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
 .hs-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-
-/* AUTOCOMPLETE */
 .hs-input-wrap{flex:2;min-width:200px;position:relative}
 .hs-input-wrap i{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#bbb;font-size:17px;pointer-events:none}
 .hs-input-wrap input{width:100%;padding:11px 12px 11px 36px;border:.5px solid #ddd;border-radius:8px;font-size:14px;outline:none;color:#1a1a1a}
 .hs-input-wrap input:focus{border-color:#0f3460}
 .dropdown{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.12);max-height:240px;overflow-y:auto;z-index:50;display:none;border:.5px solid #e0e0e0}
 .dropdown.show{display:block}
-.dd-item{padding:9px 14px 9px 14px;font-size:14px;color:#333;cursor:pointer;display:flex;align-items:center;gap:8px}
+.dd-item{padding:9px 14px;font-size:14px;color:#333;cursor:pointer;display:flex;align-items:center;gap:8px}
 .dd-item:hover,.dd-item.act{background:#f0f4fb;color:#0f3460}
 .dd-item i{color:#0f3460;font-size:15px}
 .dd-item small{margin-left:auto;font-size:11px;color:#999}
-.dd-section{padding:6px 14px;font-size:11px;color:#888;text-transform:uppercase;font-weight:600;background:#fafafa}
-
 .hs-row select{flex:1;min-width:120px;padding:11px 12px;border:.5px solid #ddd;border-radius:8px;font-size:14px;background:#f9f9f9;color:#555;outline:none}
 .hs-row select:focus{border-color:#0f3460}
 .btn-buscar{background:#c9a84c;color:#fff;border:none;padding:11px 24px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap}
@@ -63,7 +57,7 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .sep{color:#ccc;font-size:13px}
 
 .home-cats{max-width:960px;margin:2.5rem auto;padding:0 1.5rem}
-.home-cats h2{font-size:18px;font-weight:600;margin-bottom:1.25rem;color:#1a1a1a}
+.home-cats h2{font-size:18px;font-weight:600;margin-bottom:1.25rem}
 .cats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:1rem}
 .cat-card{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1.25rem 1rem;text-align:center;cursor:pointer;transition:transform .15s,border-color .15s}
 .cat-card:hover{transform:translateY(-2px);border-color:#0f3460}
@@ -78,7 +72,6 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .sec-header a:hover{text-decoration:underline}
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:1.1rem}
 
-/* RESULTS */
 #pg-results{display:none}
 .results-layout{display:grid;grid-template-columns:1fr 460px;height:calc(100vh - 60px)}
 .results-left{overflow-y:auto;padding:1.25rem 1.5rem}
@@ -87,12 +80,9 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .map-controls{position:absolute;top:12px;left:12px;display:flex;flex-direction:column;gap:6px;z-index:5}
 .mc-btn{display:flex;align-items:center;gap:5px;background:#fff;border:.5px solid #ddd;padding:8px 12px;border-radius:8px;font-size:12px;cursor:pointer;color:#333;box-shadow:0 2px 4px rgba(0,0,0,.1);white-space:nowrap}
 .mc-btn:hover,.mc-btn.act{background:#0f3460;color:#fff}
-
 .res-topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;flex-wrap:wrap;gap:8px}
 .res-topbar h2{font-size:16px;font-weight:600}
 .res-topbar span{font-size:13px;color:#888}
-
-/* SUBFILTERS */
 .filters-block{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1rem;margin-bottom:1.1rem}
 .filter-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
 .filter-row:last-child{margin-bottom:0}
@@ -118,13 +108,13 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .card-feats{display:flex;gap:10px;font-size:11px;color:#666;border-top:.5px solid #f0f0f0;padding-top:8px}
 .feat{display:flex;align-items:center;gap:3px}
 
-/* AGENTS */
 #pg-agents{display:none}
 .agents-wrap{max-width:1000px;margin:0 auto;padding:2rem 1.5rem}
 .agents-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
-.ag-card{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1.25rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:7px}
+.ag-card{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1.25rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:7px;cursor:pointer;transition:transform .15s,border-color .15s}
+.ag-card:hover{transform:translateY(-2px);border-color:#0f3460}
 .ag-av{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:17px;color:#fff}
-.ag-name{font-size:14px;font-weight:600;color:#1a1a1a}
+.ag-name{font-size:14px;font-weight:600}
 .ag-agency{font-size:12px;color:#888}
 .ag-city{font-size:12px;color:#0f3460}
 .ag-stats{display:flex;gap:14px;font-size:12px;color:#555}
@@ -132,7 +122,33 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .btn-ag{width:100%;background:#f4f7fb;border:.5px solid #ddd;color:#0f3460;padding:7px;border-radius:8px;font-size:13px;cursor:pointer;margin-top:2px}
 .btn-ag:hover{background:#e0eaf8}
 
-/* PUBLISH */
+/* AGENT PROFILE PAGE */
+#pg-agent-profile{display:none}
+.ap-wrap{max-width:1000px;margin:0 auto;padding:2rem 1.5rem}
+.ap-back{display:inline-flex;align-items:center;gap:5px;font-size:13px;color:#0f3460;margin-bottom:1.25rem;cursor:pointer}
+.ap-back:hover{text-decoration:underline}
+.ap-header{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1.75rem;display:flex;gap:1.5rem;margin-bottom:1.5rem;flex-wrap:wrap;align-items:center}
+.ap-avatar{width:96px;height:96px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:600;color:#fff;flex-shrink:0}
+.ap-info{flex:1;min-width:200px}
+.ap-info h1{font-size:24px;color:#0f3460;margin-bottom:4px}
+.ap-info .ap-agency{font-size:14px;color:#888;margin-bottom:8px}
+.ap-meta{display:flex;gap:1rem;flex-wrap:wrap;font-size:13px;color:#555;margin-bottom:.75rem}
+.ap-meta span{display:flex;align-items:center;gap:5px}
+.ap-meta i{color:#c9a84c}
+.ap-rating{display:flex;align-items:center;gap:5px;font-size:13px;color:#555}
+.ap-rating .stars{color:#c9a84c}
+.ap-actions{display:flex;gap:8px;flex-wrap:wrap}
+.ap-actions button{padding:10px 18px;border-radius:8px;font-size:13px;cursor:pointer;border:none;display:flex;align-items:center;gap:6px}
+.ap-stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1.25rem;margin-bottom:1.5rem}
+.ap-stat{text-align:center;padding:.5rem}
+.ap-stat strong{display:block;font-size:24px;color:#0f3460;font-weight:700;margin-bottom:2px}
+.ap-stat small{font-size:12px;color:#888}
+.ap-bio{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1.25rem;margin-bottom:1.5rem}
+.ap-bio h3{font-size:14px;color:#1a1a1a;margin-bottom:.5rem}
+.ap-bio p{font-size:13px;color:#555;line-height:1.7}
+.ap-props-section h2{font-size:18px;margin-bottom:1rem;color:#1a1a1a}
+.ap-tab-filter{display:flex;gap:6px;margin-bottom:1.25rem;flex-wrap:wrap}
+
 #pg-publish{display:none}
 .pub-wrap{max-width:580px;margin:2rem auto;padding:0 1.5rem}
 .pub-box{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:2rem}
@@ -143,21 +159,21 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .fg input,.fg select,.fg textarea{padding:10px 12px;border:.5px solid #ddd;border-radius:8px;font-size:14px;outline:none;font-family:inherit;color:#1a1a1a;background:#fff}
 .fg textarea{min-height:80px;resize:vertical}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:#0f3460}
+.fg .hint{font-size:11px;color:#999;margin-top:2px}
+.fg .err{font-size:11px;color:#e24b4a;margin-top:2px}
 .btn-submit{background:#c9a84c;color:#fff;border:none;padding:12px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;width:100%}
 .btn-submit:hover{background:#b8963e}
 
-/* USER PAGE */
 #pg-user{display:none}
 .user-wrap{max-width:900px;margin:2rem auto;padding:0 1.5rem}
-.user-header{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1.5rem;display:flex;align-items:center;gap:1.25rem;margin-bottom:1.5rem}
+.user-header{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1.5rem;display:flex;align-items:center;gap:1.25rem;margin-bottom:1.5rem;flex-wrap:wrap}
 .user-av-big{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#0f3460,#1a5490);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:600}
 .user-info h2{font-size:20px;color:#0f3460;margin-bottom:3px}
 .user-info p{font-size:13px;color:#888}
 .user-role-tag{display:inline-block;background:#c9a84c;color:#fff;padding:3px 10px;border-radius:12px;font-size:11px;margin-top:6px;font-weight:500}
-.user-tabs{display:flex;gap:4px;background:#f0f0ee;padding:4px;border-radius:10px;max-width:fit-content;margin-bottom:1.25rem}
+.user-tabs{display:flex;gap:4px;background:#f0f0ee;padding:4px;border-radius:10px;max-width:fit-content;margin-bottom:1.25rem;flex-wrap:wrap}
 .utab{padding:7px 16px;border-radius:8px;font-size:13px;color:#666;cursor:pointer;border:none;background:transparent}
 .utab.act{background:#fff;color:#0f3460;font-weight:600}
-
 .user-section{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1.5rem}
 .user-section h3{font-size:15px;color:#1a1a1a;margin-bottom:1rem}
 .user-empty{text-align:center;padding:2rem;color:#aaa;font-size:14px}
@@ -169,10 +185,14 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .role-card strong{display:block;font-size:14px;color:#1a1a1a;margin-bottom:2px}
 .role-card small{font-size:11px;color:#888}
 
-/* LOGIN MODAL */
+.user-data-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+.data-item{padding:.75rem;background:#f9f9f7;border-radius:8px}
+.data-item label{font-size:11px;color:#888;text-transform:uppercase;font-weight:600}
+.data-item p{font-size:14px;color:#1a1a1a;margin-top:3px}
+
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1000;align-items:center;justify-content:center;padding:1rem}
 .overlay.open{display:flex}
-.modal{background:#fff;border-radius:16px;max-width:420px;width:100%;max-height:90vh;overflow-y:auto;position:relative}
+.modal{background:#fff;border-radius:16px;max-width:460px;width:100%;max-height:92vh;overflow-y:auto;position:relative}
 .modal-close{position:absolute;top:12px;right:12px;background:#fff;border:none;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:17px;color:#555;box-shadow:0 1px 4px rgba(0,0,0,.15);z-index:10}
 .modal-body{padding:1.75rem}
 .modal-body h2{font-size:20px;color:#0f3460;margin-bottom:6px}
@@ -180,24 +200,26 @@ nav{background:#fff;border-bottom:.5px solid #e0e0e0;height:60px;display:flex;al
 .login-tabs{display:flex;gap:4px;background:#f0f0ee;padding:3px;border-radius:8px;margin-bottom:1.25rem}
 .ltab{flex:1;padding:8px;border-radius:6px;font-size:13px;color:#666;cursor:pointer;border:none;background:transparent;text-align:center}
 .ltab.act{background:#fff;color:#0f3460;font-weight:600}
-.modal-img{height:195px;display:flex;align-items:center;justify-content:center;font-size:64px;border-radius:16px 16px 0 0}
+
 .modal-big{max-width:540px}
+.modal-img{height:195px;display:flex;align-items:center;justify-content:center;font-size:64px;border-radius:16px 16px 0 0}
 .mprice{font-size:21px;font-weight:700;color:#0f3460;margin-bottom:.6rem}
 .mprice small{font-size:13px;color:#999;font-weight:400}
 .mdesc{font-size:13px;color:#555;line-height:1.7;margin-bottom:1rem}
 .mfeats{display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:1rem}
 .mfeat{background:#f4f7fb;border-radius:8px;padding:6px 12px;font-size:12px;color:#333;display:flex;align-items:center;gap:5px}
-.btn-wa{width:100%;background:#0f3460;color:#fff;border:none;padding:11px;border-radius:10px;font-size:14px;cursor:pointer}
+.btn-wa{flex:1;background:#0f3460;color:#fff;border:none;padding:11px;border-radius:10px;font-size:14px;cursor:pointer}
 .btn-wa:hover{background:#1a4a80}
+.btn-mail{flex:1;background:#fff;color:#0f3460;border:.5px solid #0f3460;padding:11px;border-radius:10px;font-size:14px;cursor:pointer}
+.btn-mail:hover{background:#f0f4fb}
+.modal-actions{display:flex;gap:8px}
 
-.toast{position:fixed;bottom:22px;right:22px;background:#1a1a1a;color:#fff;padding:10px 18px;border-radius:8px;font-size:13px;z-index:1100;opacity:0;transition:opacity .3s;pointer-events:none;max-width:300px}
+.toast{position:fixed;bottom:22px;right:22px;background:#1a1a1a;color:#fff;padding:10px 18px;border-radius:8px;font-size:13px;z-index:1100;opacity:0;transition:opacity .3s;pointer-events:none;max-width:320px}
 .toast.show{opacity:1}
 
-/* MAP MARKER */
 .map-price-pin{background:#0f3460;color:#fff;padding:4px 9px;border-radius:20px;font-size:11px;font-weight:700;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);white-space:nowrap;cursor:pointer;transform:translate(-50%,-50%);position:absolute;z-index:6}
 .map-price-pin:hover{background:#c9a84c;z-index:7}
 .map-price-pin.act{background:#c9a84c;z-index:10}
-
 .map-popup{position:absolute;background:#fff;border-radius:10px;padding:0;width:200px;box-shadow:0 4px 16px rgba(0,0,0,.25);z-index:20;transform:translate(-50%,calc(-100% - 14px));display:none}
 .map-popup.show{display:block}
 .map-popup-content{padding:10px 12px}
@@ -213,6 +235,15 @@ footer{background:#0f3460;color:#b8c9e0;padding:1.5rem;text-align:center;font-si
 footer strong{color:#c9a84c}
 
 .draw-zone{position:absolute;border:2px dashed #0f3460;background:rgba(15,52,96,.1);pointer-events:none;z-index:5}
+
+/* MESSAGES */
+.msg-thread{background:#fff;border:.5px solid #e8e8e8;border-radius:12px;padding:1rem;margin-bottom:.75rem;cursor:pointer}
+.msg-thread:hover{border-color:#0f3460}
+.msg-thread-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.msg-thread-head strong{font-size:14px;color:#0f3460}
+.msg-thread-head small{font-size:11px;color:#888}
+.msg-thread p{font-size:13px;color:#555;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.msg-prop-link{font-size:11px;color:#c9a84c;margin-top:6px;display:block}
 </style>
 </head>
 <body>
@@ -225,9 +256,7 @@ footer strong{color:#c9a84c}
     <a onclick="showPage('agents')" id="nav-agents">Agentes</a>
     <a onclick="requireAuth('publish')" id="nav-publish">Publicar</a>
   </div>
-  <div class="nav-right" id="nav-right-content">
-    <!-- Llenado dinámicamente según sesión -->
-  </div>
+  <div class="nav-right" id="nav-right-content"></div>
 </nav>
 
 <!-- HOME -->
@@ -295,12 +324,11 @@ footer strong{color:#c9a84c}
         <h2 id="res-title">Propiedades en Caracas y Carabobo</h2>
         <span id="res-count">— resultados</span>
       </div>
-
       <div class="filters-block">
         <div class="filter-row">
           <span class="filter-row-label">Operación</span>
           <div class="filter-chips">
-            <button class="chip" data-op="todos" onclick="setFilter('op','todos',this)">Todos</button>
+            <button class="chip act" data-op="todos" onclick="setFilter('op','todos',this)">Todos</button>
             <button class="chip" data-op="venta" onclick="setFilter('op','venta',this)">En venta</button>
             <button class="chip" data-op="alquiler" onclick="setFilter('op','alquiler',this)">En alquiler</button>
           </div>
@@ -315,7 +343,6 @@ footer strong{color:#c9a84c}
           </div>
         </div>
       </div>
-
       <div class="prop-grid" id="prop-grid"></div>
     </div>
     <div class="results-right">
@@ -339,6 +366,22 @@ footer strong{color:#c9a84c}
       <span style="font-size:13px;color:#888">6 agentes verificados</span>
     </div>
     <div class="agents-grid" id="agents-grid"></div>
+  </div>
+  <footer style="margin-top:2rem"><strong>VeneInmo</strong></footer>
+</div>
+
+<!-- AGENT PROFILE -->
+<div id="pg-agent-profile">
+  <div class="ap-wrap">
+    <a class="ap-back" onclick="showPage('agents')"><i class="ti ti-arrow-left"></i> Volver a agentes</a>
+    <div class="ap-header" id="ap-header"></div>
+    <div class="ap-stats-row" id="ap-stats-row"></div>
+    <div class="ap-bio" id="ap-bio"></div>
+    <div class="ap-props-section">
+      <h2 id="ap-props-title">Propiedades publicadas</h2>
+      <div class="ap-tab-filter" id="ap-tab-filter"></div>
+      <div class="prop-grid" id="ap-props-grid"></div>
+    </div>
   </div>
   <footer style="margin-top:2rem"><strong>VeneInmo</strong></footer>
 </div>
@@ -372,7 +415,7 @@ footer strong{color:#c9a84c}
   <footer style="margin-top:2rem"><strong>VeneInmo</strong></footer>
 </div>
 
-<!-- USER PAGE -->
+<!-- USER -->
 <div id="pg-user">
   <div class="user-wrap">
     <div class="user-header">
@@ -389,27 +432,22 @@ footer strong{color:#c9a84c}
       <button class="utab act" onclick="showUserTab('profile',this)">Mi perfil</button>
       <button class="utab" onclick="showUserTab('favs',this)">Favoritos</button>
       <button class="utab" onclick="showUserTab('myprops',this)">Mis publicaciones</button>
+      <button class="utab" onclick="showUserTab('msgs',this)">Mensajes</button>
     </div>
 
     <div id="utab-profile" class="user-section">
       <h3>¿Cómo usas VeneInmo?</h3>
-      <p style="font-size:13px;color:#888;margin-bottom:1rem">Selecciona tu rol principal para personalizar tu experiencia</p>
+      <p style="font-size:13px;color:#888;margin-bottom:1rem">Selecciona tu rol principal</p>
       <div class="user-prefs">
         <div class="role-card" id="role-arr" onclick="setRole('arrendador')">
-          <i class="ti ti-key"></i>
-          <strong>Arrendador / Propietario</strong>
-          <small>Publico mis propiedades</small>
+          <i class="ti ti-key"></i><strong>Arrendador / Propietario</strong><small>Publico mis propiedades</small>
         </div>
         <div class="role-card" id="role-tnt" onclick="setRole('arrendatario')">
-          <i class="ti ti-home-search"></i>
-          <strong>Arrendatario / Comprador</strong>
-          <small>Busco una propiedad</small>
+          <i class="ti ti-home-search"></i><strong>Arrendatario / Comprador</strong><small>Busco una propiedad</small>
         </div>
       </div>
-      <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:.5px solid #eee">
-        <h3>Notificaciones</h3>
-        <p style="font-size:13px;color:#888">Próximamente — alertas cuando aparezcan propiedades que coincidan con tu búsqueda</p>
-      </div>
+      <h3 style="margin-top:1.5rem;padding-top:1.25rem;border-top:.5px solid #eee">Información personal</h3>
+      <div class="user-data-grid" id="user-data-grid"></div>
     </div>
 
     <div id="utab-favs" class="user-section" style="display:none">
@@ -421,29 +459,79 @@ footer strong{color:#c9a84c}
       <h3>Mis publicaciones</h3>
       <div id="myprops-list"></div>
     </div>
+
+    <div id="utab-msgs" class="user-section" style="display:none">
+      <h3>Mensajes</h3>
+      <div id="msgs-list"></div>
+    </div>
   </div>
   <footer style="margin-top:2rem"><strong>VeneInmo</strong></footer>
 </div>
 
-<!-- LOGIN MODAL -->
+<!-- LOGIN/SIGNUP MODAL -->
 <div class="overlay" id="login-modal" onclick="closeLoginBg(event)">
   <div class="modal">
     <button class="modal-close" onclick="closeLogin()"><i class="ti ti-x"></i></button>
     <div class="modal-body">
       <h2>Bienvenido a VeneInmo</h2>
-      <p class="sub" id="login-sub">Inicia sesión para continuar</p>
+      <p class="sub" id="login-sub">Accede a tu cuenta o crea una nueva</p>
       <div class="login-tabs">
-        <button class="ltab act" onclick="setLoginMode('login',this)">Iniciar sesión</button>
-        <button class="ltab" onclick="setLoginMode('signup',this)">Registrarse</button>
+        <button class="ltab act" id="ltab-login" onclick="setLoginMode('login',this)">Iniciar sesión</button>
+        <button class="ltab" id="ltab-signup" onclick="setLoginMode('signup',this)">Registrarme</button>
       </div>
+
+      <!-- Signup-only fields -->
       <div id="signup-fields" style="display:none">
-        <div class="fg"><label>Nombre completo</label><input id="lg-name" type="text" placeholder="Tu nombre"></div>
+        <div class="fg"><label>Nombre completo</label><input id="lg-name" type="text" placeholder="Ej. María Pérez García"></div>
+        <div class="frow">
+          <div class="fg">
+            <label>País</label>
+            <select id="lg-country">
+              <option value="">Seleccionar...</option>
+              <option>🇻🇪 Venezuela</option>
+              <option>🇨🇴 Colombia</option>
+              <option>🇪🇨 Ecuador</option>
+              <option>🇵🇦 Panamá</option>
+              <option>🇲🇽 México</option>
+              <option>🇺🇸 Estados Unidos</option>
+              <option>🇪🇸 España</option>
+              <option>🇨🇱 Chile</option>
+              <option>🇦🇷 Argentina</option>
+              <option>🇵🇪 Perú</option>
+              <option>🇩🇴 República Dominicana</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="fg"><label>Año de nacimiento</label><input id="lg-year" type="number" placeholder="1990" min="1920" max="2010"></div>
+        </div>
       </div>
+
       <div class="fg"><label>Correo electrónico</label><input id="lg-email" type="email" placeholder="tucorreo@ejemplo.com"></div>
-      <div class="fg"><label>Contraseña</label><input id="lg-pass" type="password" placeholder="••••••••"></div>
-      <button class="btn-submit" onclick="doLogin()" id="lg-btn">Iniciar sesión</button>
-      <div style="text-align:center;margin-top:1rem;font-size:12px;color:#999">
-        <i class="ti ti-info-circle" style="vertical-align:-2px"></i> Demo: cualquier email y contraseña funcionarán
+      <div class="fg">
+        <label>Contraseña</label>
+        <input id="lg-pass" type="password" placeholder="••••••••">
+        <span class="hint" id="pass-hint" style="display:none">Mínimo 6 caracteres</span>
+      </div>
+      <button class="btn-submit" onclick="doAuth()" id="lg-btn">Iniciar sesión</button>
+      <div style="text-align:center;margin-top:1rem;font-size:11px;color:#999">
+        <i class="ti ti-shield-check" style="vertical-align:-2px"></i> Tus datos se guardan localmente en tu navegador
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT MODAL -->
+<div class="overlay" id="contact-modal" onclick="closeContactBg(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeContact()"><i class="ti ti-x"></i></button>
+    <div class="modal-body">
+      <h2>Contactar al propietario</h2>
+      <p class="sub" id="contact-sub">Envía un mensaje sobre esta propiedad</p>
+      <div class="fg"><label>Asunto</label><input id="ct-subject" type="text" placeholder="Estoy interesado en su propiedad"></div>
+      <div class="fg"><label>Mensaje</label><textarea id="ct-msg" style="min-height:120px" placeholder="Hola, me interesa esta propiedad. ¿Podría darme más información sobre..."></textarea></div>
+      <button class="btn-submit" onclick="sendContact()">Enviar mensaje</button>
+      <div style="text-align:center;margin-top:.75rem;font-size:11px;color:#999">
+        El propietario recibirá tu mensaje con tu correo de contacto
       </div>
     </div>
   </div>
@@ -461,7 +549,10 @@ footer strong{color:#c9a84c}
       <div class="feat" style="font-size:12px;color:#999;margin-bottom:.8rem"><i class="ti ti-map-pin" style="color:#c9a84c"></i><span id="m-loc"></span></div>
       <p class="mdesc" id="m-desc"></p>
       <div class="mfeats" id="m-feats"></div>
-      <button class="btn-wa" onclick="closeModal();showToast('Redirigiendo a WhatsApp...')"><i class="ti ti-brand-whatsapp"></i> Contactar por WhatsApp</button>
+      <div class="modal-actions">
+        <button class="btn-mail" onclick="openContact()"><i class="ti ti-mail"></i> Enviar mensaje</button>
+        <button class="btn-wa" onclick="contactWA()"><i class="ti ti-brand-whatsapp"></i> WhatsApp</button>
+      </div>
     </div>
   </div>
 </div>
@@ -470,219 +561,173 @@ footer strong{color:#c9a84c}
 
 <script>
 // ═══════════ DATA ═══════════
-// Coordenadas reales aproximadas en el SVG del mapa (viewBox 0 0 1000 700)
-// Caracas (este): ~720,420  Carabobo (Valencia,centro-norte): ~540,420
-const props=[
-  {id:1,tipo:"Apartamento",op:"Venta",ciudad:"Caracas",sector:"Las Mercedes",precio:95000,m2:85,hab:3,ban:2,emoji:"🏙️",mx:730,my:425,desc:"Moderno apartamento en una de las zonas más exclusivas de Caracas. Acabados de primera, cocina equipada, balcón con vista panorámica y estacionamiento cubierto. Edificio con vigilancia 24h y gimnasio.",extras:["Estacionamiento","Gimnasio","Vigilancia","Balcón"]},
-  {id:2,tipo:"Casa",op:"Venta",ciudad:"Valencia",sector:"Prebo",precio:155000,m2:220,hab:4,ban:3,emoji:"🏡",mx:545,my:420,desc:"Amplia casa en urbanización cerrada de Valencia. Jardín privado, piscina, cuarto de servicio y garaje para 3 vehículos.",extras:["Piscina","Jardín","Cuarto de servicio","Garaje"]},
-  {id:3,tipo:"Apartamento",op:"Alquiler",ciudad:"Caracas",sector:"Altamira",precio:800,m2:65,hab:2,ban:1,emoji:"🏢",mx:740,my:410,desc:"Apartamento amueblado en el corazón de Altamira, ideal para ejecutivos. Cocina americana, internet incluido, a pasos del metro.",extras:["Amueblado","Internet","Metro cercano"]},
-  {id:4,tipo:"Apartamento",op:"Alquiler",ciudad:"Caracas",sector:"Chacao",precio:650,m2:55,hab:1,ban:1,emoji:"🏬",mx:735,my:418,desc:"Apartamento moderno en Chacao, zona financiera de Caracas. Perfecto para ejecutivos jóvenes. Vista despejada y excelente conexión.",extras:["Zona financiera","Amueblado","Vista despejada"]},
-  {id:5,tipo:"Casa",op:"Venta",ciudad:"Valencia",sector:"El Viñedo",precio:185000,m2:280,hab:5,ban:4,emoji:"🏘️",mx:550,my:425,desc:"Espectacular casa familiar en El Viñedo, Valencia. Amplias áreas sociales, piscina, jardín tropical y zona de parrillera.",extras:["Piscina","Parrillera","5 habitaciones","Jardín"]},
-  {id:6,tipo:"Local comercial",op:"Alquiler",ciudad:"Valencia",sector:"Av. Bolívar",precio:550,m2:60,hab:0,ban:1,emoji:"🏪",mx:548,my:415,desc:"Local en avenida principal de Valencia. Excelente flujo peatonal y vehicular. Ideal para comercio, oficina o consultorio.",extras:["Avenida principal","Vidriera amplia","Estacionamiento"]},
+const baseProps=[
+  {id:1,tipo:"Apartamento",op:"Venta",ciudad:"Caracas",sector:"Las Mercedes",precio:95000,m2:85,hab:3,ban:2,emoji:"🏙️",mx:730,my:425,owner:"agente1@veneinmo.demo",ownerName:"María González",ownerPhone:"+58412 111 2233",desc:"Moderno apartamento en una de las zonas más exclusivas de Caracas. Acabados de primera, cocina equipada, balcón con vista panorámica y estacionamiento cubierto.",extras:["Estacionamiento","Gimnasio","Vigilancia","Balcón"]},
+  {id:2,tipo:"Casa",op:"Venta",ciudad:"Valencia",sector:"Prebo",precio:155000,m2:220,hab:4,ban:3,emoji:"🏡",mx:545,my:420,owner:"agente2@veneinmo.demo",ownerName:"Carlos Rodríguez",ownerPhone:"+58414 555 6677",desc:"Amplia casa en urbanización cerrada de Valencia. Jardín privado, piscina, cuarto de servicio y garaje para 3 vehículos.",extras:["Piscina","Jardín","Cuarto de servicio","Garaje"]},
+  {id:3,tipo:"Apartamento",op:"Alquiler",ciudad:"Caracas",sector:"Altamira",precio:800,m2:65,hab:2,ban:1,emoji:"🏢",mx:740,my:410,owner:"agente1@veneinmo.demo",ownerName:"María González",ownerPhone:"+58412 111 2233",desc:"Apartamento amueblado en el corazón de Altamira, ideal para ejecutivos.",extras:["Amueblado","Internet","Metro cercano"]},
+  {id:4,tipo:"Apartamento",op:"Alquiler",ciudad:"Caracas",sector:"Chacao",precio:650,m2:55,hab:1,ban:1,emoji:"🏬",mx:735,my:418,owner:"agente3@veneinmo.demo",ownerName:"Roberto Díaz",ownerPhone:"+58414 888 9900",desc:"Apartamento moderno en Chacao, zona financiera de Caracas.",extras:["Zona financiera","Amueblado","Vista despejada"]},
+  {id:5,tipo:"Casa",op:"Venta",ciudad:"Valencia",sector:"El Viñedo",precio:185000,m2:280,hab:5,ban:4,emoji:"🏘️",mx:550,my:425,owner:"agente2@veneinmo.demo",ownerName:"Carlos Rodríguez",ownerPhone:"+58414 555 6677",desc:"Espectacular casa familiar en El Viñedo, Valencia.",extras:["Piscina","Parrillera","5 habitaciones","Jardín"]},
+  {id:6,tipo:"Local comercial",op:"Alquiler",ciudad:"Valencia",sector:"Av. Bolívar",precio:550,m2:60,hab:0,ban:1,emoji:"🏪",mx:548,my:415,owner:"agente2@veneinmo.demo",ownerName:"Carlos Rodríguez",ownerPhone:"+58414 555 6677",desc:"Local en avenida principal de Valencia.",extras:["Avenida principal","Vidriera amplia"]},
 ];
 
 const sectoresDB=[
-  // Caracas
   {nombre:"Caracas",tipo:"Ciudad",props:3},
-  {nombre:"Caracas — Las Mercedes",tipo:"Sector",props:1,parent:"Caracas"},
-  {nombre:"Caracas — Altamira",tipo:"Sector",props:1,parent:"Caracas"},
-  {nombre:"Caracas — Chacao",tipo:"Sector",props:1,parent:"Caracas"},
-  {nombre:"Caracas — La Castellana",tipo:"Sector",props:0,parent:"Caracas"},
-  {nombre:"Caracas — Los Palos Grandes",tipo:"Sector",props:0,parent:"Caracas"},
-  // Carabobo
+  {nombre:"Caracas — Las Mercedes",tipo:"Sector",props:1},
+  {nombre:"Caracas — Altamira",tipo:"Sector",props:1},
+  {nombre:"Caracas — Chacao",tipo:"Sector",props:1},
+  {nombre:"Caracas — La Castellana",tipo:"Sector",props:0},
+  {nombre:"Caracas — Los Palos Grandes",tipo:"Sector",props:0},
   {nombre:"Carabobo",tipo:"Estado",props:3},
-  {nombre:"Valencia",tipo:"Ciudad",props:3,parent:"Carabobo"},
-  {nombre:"Valencia — Prebo",tipo:"Sector",props:1,parent:"Valencia"},
-  {nombre:"Valencia — El Viñedo",tipo:"Sector",props:1,parent:"Valencia"},
-  {nombre:"Valencia — Av. Bolívar",tipo:"Sector",props:1,parent:"Valencia"},
-  {nombre:"Valencia — La Trigaleña",tipo:"Sector",props:0,parent:"Valencia"},
-  {nombre:"Naguanagua",tipo:"Ciudad",props:0,parent:"Carabobo"},
-  {nombre:"Puerto Cabello",tipo:"Ciudad",props:0,parent:"Carabobo"},
+  {nombre:"Valencia",tipo:"Ciudad",props:3},
+  {nombre:"Valencia — Prebo",tipo:"Sector",props:1},
+  {nombre:"Valencia — El Viñedo",tipo:"Sector",props:1},
+  {nombre:"Valencia — Av. Bolívar",tipo:"Sector",props:1},
+  {nombre:"Valencia — La Trigaleña",tipo:"Sector",props:0},
+  {nombre:"Naguanagua",tipo:"Ciudad",props:0},
+  {nombre:"Puerto Cabello",tipo:"Ciudad",props:0},
 ];
 
 const agents=[
-  {name:"María González",agency:"Caracas Prime",city:"Caracas",props:18,years:7,color:"#0f3460",ini:"MG"},
-  {name:"Carlos Rodríguez",agency:"VeneCasa Realty",city:"Valencia",props:12,years:5,color:"#c9a84c",ini:"CR"},
-  {name:"Luisa Fernández",agency:"Inmuebles Carabobo",city:"Valencia",props:9,years:3,color:"#1d9e75",ini:"LF"},
-  {name:"Andrés Morales",agency:"Capital Inmuebles",city:"Caracas",props:7,years:4,color:"#d85a30",ini:"AM"},
-  {name:"Patricia Suárez",agency:"Prebo Propiedades",city:"Valencia",props:11,years:6,color:"#533ab7",ini:"PS"},
-  {name:"Roberto Díaz",agency:"Altamira Realty",city:"Caracas",props:5,years:2,color:"#185fa5",ini:"RD"},
+  {id:1,email:"agente1@veneinmo.demo",name:"María González",agency:"Caracas Prime",city:"Caracas",years:7,color:"#0f3460",ini:"MG",phone:"+58412 111 2233",bio:"Especialista en propiedades de lujo en el este de Caracas. Más de 7 años conectando familias con su hogar ideal en Las Mercedes, Altamira y La Castellana.",specialties:["Apartamentos de lujo","Zona este de Caracas","Inversión inmobiliaria"],rating:4.8,reviews:34},
+  {id:2,email:"agente2@veneinmo.demo",name:"Carlos Rodríguez",agency:"VeneCasa Realty",city:"Valencia",years:5,color:"#c9a84c",ini:"CR",phone:"+58414 555 6677",bio:"Agente líder en el estado Carabobo. Atiendo casas familiares, apartamentos y locales comerciales en Valencia y zonas aledañas con un servicio personalizado.",specialties:["Casas familiares","Locales comerciales","Valencia y Naguanagua"],rating:4.6,reviews:22},
+  {id:3,email:"agente3@veneinmo.demo",name:"Roberto Díaz",agency:"Altamira Realty",city:"Caracas",years:2,color:"#185fa5",ini:"RD",phone:"+58414 888 9900",bio:"Joven agente enfocado en el mercado de alquileres ejecutivos en Chacao y Altamira. Respuesta rápida y trato directo.",specialties:["Alquileres ejecutivos","Chacao","Apartamentos amueblados"],rating:4.5,reviews:11},
+  {id:4,email:"agente4@veneinmo.demo",name:"Luisa Fernández",agency:"Inmuebles Carabobo",city:"Valencia",years:3,color:"#1d9e75",ini:"LF",phone:"+58416 333 4455",bio:"Conozco cada rincón de Valencia. Te ayudo a encontrar la propiedad ideal según tu presupuesto y necesidades familiares.",specialties:["Asesoría personalizada","Primera compra","Valencia"],rating:4.7,reviews:18},
+  {id:5,email:"agente5@veneinmo.demo",name:"Andrés Morales",agency:"Capital Inmuebles",city:"Caracas",years:4,color:"#d85a30",ini:"AM",phone:"+58424 777 8899",bio:"Especialista en inversiones inmobiliarias en Caracas. Acompaño tanto a inversionistas como a familias en la compra o venta de su propiedad.",specialties:["Inversión","Asesoría legal","Caracas"],rating:4.4,reviews:9},
+  {id:6,email:"agente6@veneinmo.demo",name:"Patricia Suárez",agency:"Prebo Propiedades",city:"Valencia",years:6,color:"#533ab7",ini:"PS",phone:"+58412 222 3344",bio:"Más de 6 años especializada en urbanizaciones premium de Valencia: Prebo, El Viñedo y La Trigaleña. Atención cercana y profesional.",specialties:["Prebo","El Viñedo","Casas premium"],rating:4.9,reviews:41},
 ];
 
+// ═══════════ STORAGE LAYER ═══════════
+const STORAGE_KEYS={users:'veneinmo_users',session:'veneinmo_session',pubs:'veneinmo_pubs',favs:'veneinmo_favs',msgs:'veneinmo_msgs'};
+
+function loadFromStorage(){
+  try{
+    users=JSON.parse(localStorage.getItem(STORAGE_KEYS.users)||'{}');
+    const s=localStorage.getItem(STORAGE_KEYS.session);
+    session=s?JSON.parse(s):null;
+    myPublications=JSON.parse(localStorage.getItem(STORAGE_KEYS.pubs)||'[]');
+    const f=localStorage.getItem(STORAGE_KEYS.favs);
+    favorites=new Set(f?JSON.parse(f):[]);
+    messages=JSON.parse(localStorage.getItem(STORAGE_KEYS.msgs)||'[]');
+  }catch(e){
+    users={};session=null;myPublications=[];favorites=new Set();messages=[];
+  }
+}
+function saveUsers(){localStorage.setItem(STORAGE_KEYS.users,JSON.stringify(users));}
+function saveSession(){if(session)localStorage.setItem(STORAGE_KEYS.session,JSON.stringify(session));else localStorage.removeItem(STORAGE_KEYS.session);}
+function savePubs(){localStorage.setItem(STORAGE_KEYS.pubs,JSON.stringify(myPublications));}
+function saveFavs(){localStorage.setItem(STORAGE_KEYS.favs,JSON.stringify([...favorites]));}
+function saveMsgs(){localStorage.setItem(STORAGE_KEYS.msgs,JSON.stringify(messages));}
+
+// Hash simple para contraseña (NO usar en producción real)
+function hashPass(s){let h=0;for(let i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0;}return 'h'+h;}
+
 // ═══════════ STATE ═══════════
-let filtered=[...props];
+let users={}, session=null, myPublications=[], favorites=new Set(), messages=[];
 let filterOp='todos', filterTipo='todos', currentHeroOp='Comprar';
-let session=null; // {name,email,role}
-let favorites=new Set();
-let myPublications=[];
-let pendingAction=null;
+let pendingAction=null, currentPropertyId=null, loginMode='login';
+
+function allProps(){return [...baseProps,...myPublications];}
 
 // ═══════════ PAGES ═══════════
 function showPage(p){
-  ['home','results','agents','publish','user'].forEach(x=>document.getElementById('pg-'+x).style.display='none');
+  ['home','results','agents','agent-profile','publish','user'].forEach(x=>{const el=document.getElementById('pg-'+x);if(el)el.style.display='none';});
   document.getElementById('pg-'+p).style.display='block';
   ['home','props','agents','publish'].forEach(n=>{const e=document.getElementById('nav-'+n);if(e)e.classList.remove('act');});
-  const map={home:'home',results:'props',agents:'agents',publish:'publish'};
+  const map={home:'home',results:'props',agents:'agents','agent-profile':'agents',publish:'publish'};
   const el=document.getElementById('nav-'+map[p]);
   if(el)el.classList.add('act');
+  if(p==='user')renderUserPage();
   window.scrollTo(0,0);
 }
 function goHome(){showPage('home')}
 
 function showResults(){
-  // Aplica operación seleccionada en el home a los filtros de resultados
-  if(currentHeroOp==='Alquilar'){filterOp='alquiler';}
-  else if(currentHeroOp==='Comprar'){filterOp='venta';}
+  if(currentHeroOp==='Alquilar')filterOp='alquiler';
+  else if(currentHeroOp==='Comprar')filterOp='venta';
   syncChips();
   showPage('results');
   applyFilters();
-  renderMapPins(filtered);
+  renderMapPins(filteredList());
 }
 
 function filterCat(cat){
   filterTipo=cat.toLowerCase();
-  // Si hero estaba en Alquilar
-  if(currentHeroOp==='Alquilar') filterOp='alquiler';
-  else if(currentHeroOp==='Comprar') filterOp='venta';
+  if(currentHeroOp==='Alquilar')filterOp='alquiler';
+  else if(currentHeroOp==='Comprar')filterOp='venta';
   syncChips();
   showPage('results');
   applyFilters();
-  renderMapPins(filtered);
+  renderMapPins(filteredList());
 }
 
 function syncChips(){
-  document.querySelectorAll('[data-op]').forEach(c=>c.classList.toggle('act',c.dataset.op===filterOp));
+  document.querySelectorAll('[data-op]').forEach(c=>{if(c.classList.contains('chip'))c.classList.toggle('act',c.dataset.op===filterOp);});
   document.querySelectorAll('[data-tipo]').forEach(c=>c.classList.toggle('act',c.dataset.tipo===filterTipo));
 }
 
 function setFilter(kind,val,btn){
-  if(kind==='op')filterOp=val;
-  else filterTipo=val;
-  // Quita act del grupo
+  if(kind==='op')filterOp=val;else filterTipo=val;
   const group=btn.parentElement.querySelectorAll('.chip');
   group.forEach(c=>c.classList.remove('act'));
   btn.classList.add('act');
   applyFilters();
-  renderMapPins(filtered);
+  renderMapPins(filteredList());
 }
 
 // ═══════════ SEARCH AUTOCOMPLETE ═══════════
 function onSearchInput(val){
   const dd=document.getElementById('hs-dropdown');
   const v=val.trim().toLowerCase();
-  let list;
-  if(!v){
-    list=sectoresDB.filter(s=>s.tipo!=='Sector').slice(0,8);
-  } else {
-    list=sectoresDB.filter(s=>s.nombre.toLowerCase().includes(v)).slice(0,10);
-  }
+  let list=v?sectoresDB.filter(s=>s.nombre.toLowerCase().includes(v)).slice(0,10):sectoresDB.filter(s=>s.tipo!=='Sector').slice(0,8);
   if(!list.length){
     dd.innerHTML='<div class="dd-item" style="color:#aaa">Sin resultados</div>';
-    dd.classList.add('show');
-    return;
+    dd.classList.add('show');return;
   }
   dd.innerHTML=list.map(s=>{
-    const iconMap={'Estado':'ti-map-pin-filled','Ciudad':'ti-building-arch','Sector':'ti-map-pin'};
-    return `<div class="dd-item" onclick="pickSector('${s.nombre.replace(/'/g,"\\'")}')"><i class="ti ${iconMap[s.tipo]||'ti-map-pin'}"></i><span>${s.nombre}</span><small>${s.props} prop.</small></div>`;
+    const ico={'Estado':'ti-map-pin-filled','Ciudad':'ti-building-arch','Sector':'ti-map-pin'};
+    return `<div class="dd-item" onclick="pickSector('${s.nombre.replace(/'/g,"\\'")}')"><i class="ti ${ico[s.tipo]||'ti-map-pin'}"></i><span>${s.nombre}</span><small>${s.props} prop.</small></div>`;
   }).join('');
   dd.classList.add('show');
 }
-function pickSector(name){
-  document.getElementById('hs-txt').value=name;
-  hideDropdown();
-}
+function pickSector(name){document.getElementById('hs-txt').value=name;hideDropdown();}
 function hideDropdown(){document.getElementById('hs-dropdown').classList.remove('show');}
 
-// ═══════════ MAP RENDER ═══════════
+// ═══════════ MAP ═══════════
 function renderMap(){
-  const map=document.getElementById('map');
-  map.innerHTML=`
+  document.getElementById('map').innerHTML=`
   <svg viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block">
-    <defs>
-      <pattern id="watergrad" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-        <rect width="40" height="40" fill="#b8d4e8"/>
-      </pattern>
-    </defs>
-    <!-- Mar Caribe arriba -->
     <rect x="0" y="0" width="1000" height="380" fill="#a8c8e0"/>
     <text x="100" y="120" fill="#7da3c4" font-size="22" font-weight="600" font-family="Segoe UI" letter-spacing="6">MAR CARIBE</text>
-    <text x="100" y="145" fill="#7da3c4" font-size="13" font-family="Segoe UI" letter-spacing="3" opacity=".8">~ ~ ~</text>
-
-    <!-- Forma simplificada de Venezuela (Caracas + Carabobo + alrededores) -->
-    <!-- Costa norte -->
-    <path d="M 0,380
-             L 80,375 120,378 180,382 240,380 290,378 340,382
-             L 400,380 460,378 510,375 560,372 600,370 650,372
-             L 700,375 750,378 800,380 850,382 900,385 950,388 1000,390
-             L 1000,700 L 0,700 Z"
-          fill="#e8e4d0" stroke="#a89868" stroke-width="2"/>
-
-    <!-- Estado Carabobo (resaltado suave) -->
-    <path d="M 460,378 L 510,375 560,372 600,440 580,490 540,510 490,500 470,460 Z"
-          fill="#d8e6d4" stroke="#7a9a72" stroke-width="1.5" stroke-dasharray="4 3" opacity=".7"/>
+    <path d="M 0,380 L 80,375 120,378 180,382 240,380 290,378 340,382 L 400,380 460,378 510,375 560,372 600,370 650,372 L 700,375 750,378 800,380 850,382 900,385 950,388 1000,390 L 1000,700 L 0,700 Z" fill="#e8e4d0" stroke="#a89868" stroke-width="2"/>
+    <path d="M 460,378 L 510,375 560,372 600,440 580,490 540,510 490,500 470,460 Z" fill="#d8e6d4" stroke="#7a9a72" stroke-width="1.5" stroke-dasharray="4 3" opacity=".7"/>
     <text x="500" y="475" fill="#6a8a62" font-size="13" font-weight="700" font-family="Segoe UI" text-anchor="middle">CARABOBO</text>
-
-    <!-- Distrito Capital / Miranda (Caracas y alrededores) -->
-    <path d="M 680,375 L 720,373 760,375 790,440 770,485 730,495 690,485 670,445 Z"
-          fill="#e0d8e8" stroke="#8a7a9a" stroke-width="1.5" stroke-dasharray="4 3" opacity=".7"/>
+    <path d="M 680,375 L 720,373 760,375 790,440 770,485 730,495 690,485 670,445 Z" fill="#e0d8e8" stroke="#8a7a9a" stroke-width="1.5" stroke-dasharray="4 3" opacity=".7"/>
     <text x="725" y="470" fill="#6a5a7a" font-size="12" font-weight="700" font-family="Segoe UI" text-anchor="middle">DTO. CAPITAL</text>
-
-    <!-- Lago de Valencia -->
     <ellipse cx="535" cy="445" rx="25" ry="12" fill="#a8c8e0" stroke="#88a8c0" stroke-width="1"/>
     <text x="535" y="448" fill="#5a7a92" font-size="8" font-family="Segoe UI" text-anchor="middle">Lago</text>
-
-    <!-- Cordillera de la Costa -->
     <path d="M 250,420 Q 400,395 550,405 T 850,415" stroke="#a89868" stroke-width="3" fill="none" opacity=".4"/>
-    <path d="M 250,420 Q 400,395 550,405 T 850,415" stroke="#7a6a48" stroke-width="1" fill="none" stroke-dasharray="2 3" opacity=".6"/>
-
-    <!-- Ciudades principales -->
     <circle cx="540" cy="420" r="6" fill="#c9a84c" stroke="#fff" stroke-width="2"/>
     <text x="555" y="416" fill="#1a1a1a" font-size="13" font-weight="600" font-family="Segoe UI">Valencia</text>
-
     <circle cx="730" cy="418" r="6" fill="#c9a84c" stroke="#fff" stroke-width="2"/>
     <text x="745" y="414" fill="#1a1a1a" font-size="13" font-weight="600" font-family="Segoe UI">Caracas</text>
-
     <circle cx="480" cy="395" r="3" fill="#888" stroke="#fff" stroke-width="1"/>
     <text x="488" y="392" fill="#666" font-size="10" font-family="Segoe UI">Puerto Cabello</text>
-
     <circle cx="560" cy="455" r="3" fill="#888" stroke="#fff" stroke-width="1"/>
     <text x="568" y="458" fill="#666" font-size="10" font-family="Segoe UI">Naguanagua</text>
-
-    <circle cx="780" cy="430" r="3" fill="#888" stroke="#fff" stroke-width="1"/>
-    <text x="788" y="433" fill="#666" font-size="10" font-family="Segoe UI">Petare</text>
-
-    <!-- Carreteras -->
     <path d="M 540,420 Q 635,410 730,418" stroke="#fff" stroke-width="3" fill="none" opacity=".7"/>
     <path d="M 540,420 Q 635,410 730,418" stroke="#c9a84c" stroke-width="1" fill="none" stroke-dasharray="4 2" opacity=".7"/>
     <text x="635" y="403" fill="#7a6a48" font-size="9" font-family="Segoe UI" text-anchor="middle">Autopista Regional del Centro</text>
-
-    <!-- Rosa de los vientos -->
-    <g transform="translate(920,60)">
-      <circle r="22" fill="#fff" stroke="#0f3460" stroke-width="1.5" opacity=".9"/>
-      <path d="M 0,-18 L 4,0 L 0,18 L -4,0 Z" fill="#0f3460"/>
-      <text y="-25" font-size="10" font-weight="700" fill="#0f3460" font-family="Segoe UI" text-anchor="middle">N</text>
-    </g>
-
-    <!-- Escala -->
-    <g transform="translate(40,650)">
-      <line x1="0" y1="0" x2="80" y2="0" stroke="#333" stroke-width="2"/>
-      <line x1="0" y1="-3" x2="0" y2="3" stroke="#333" stroke-width="2"/>
-      <line x1="80" y1="-3" x2="80" y2="3" stroke="#333" stroke-width="2"/>
-      <text x="40" y="-6" font-size="10" fill="#333" font-family="Segoe UI" text-anchor="middle">≈ 100 km</text>
-    </g>
-
-    <!-- Atribución -->
+    <g transform="translate(920,60)"><circle r="22" fill="#fff" stroke="#0f3460" stroke-width="1.5" opacity=".9"/><path d="M 0,-18 L 4,0 L 0,18 L -4,0 Z" fill="#0f3460"/><text y="-25" font-size="10" font-weight="700" fill="#0f3460" font-family="Segoe UI" text-anchor="middle">N</text></g>
+    <g transform="translate(40,650)"><line x1="0" y1="0" x2="80" y2="0" stroke="#333" stroke-width="2"/><line x1="0" y1="-3" x2="0" y2="3" stroke="#333" stroke-width="2"/><line x1="80" y1="-3" x2="80" y2="3" stroke="#333" stroke-width="2"/><text x="40" y="-6" font-size="10" fill="#333" font-family="Segoe UI" text-anchor="middle">≈ 100 km</text></g>
     <text x="990" y="690" font-size="9" fill="#888" font-family="Segoe UI" text-anchor="end">Mapa demostrativo · Caracas y Carabobo</text>
   </svg>`;
 }
-
 function renderMapPins(list){
   const map=document.getElementById('map');
   map.querySelectorAll('.map-price-pin').forEach(p=>p.remove());
   list.forEach(p=>{
     const pin=document.createElement('div');
     pin.className='map-price-pin';
-    // Convertir coords del SVG (1000x700) a porcentajes
     pin.style.left=(p.mx/1000*100)+'%';
     pin.style.top=(p.my/700*100)+'%';
     pin.textContent=p.precio>=1000?'$'+(p.precio/1000).toFixed(0)+'K':'$'+p.precio;
@@ -690,19 +735,11 @@ function renderMapPins(list){
     map.appendChild(pin);
   });
 }
-
 function showMapPopup(p,pinEl){
   const pop=document.getElementById('map-popup');
   pop.style.left=(p.mx/1000*100)+'%';
   pop.style.top=(p.my/700*100)+'%';
-  pop.innerHTML=`<button class="map-popup-close" onclick="document.getElementById('map-popup').classList.remove('show')">×</button>
-    <div class="map-popup-content">
-      <h4>${p.tipo} · ${p.sector}</h4>
-      <p>${p.ciudad}</p>
-      <strong>$${p.precio.toLocaleString()}${p.op==='Alquiler'?'/mes':''}</strong>
-      <small>${p.m2} m²${p.hab>0?' · '+p.hab+' hab.':''} · ${p.ban} baño${p.ban>1?'s':''}</small>
-      <button onclick="openModal(${p.id});document.getElementById('map-popup').classList.remove('show')">Ver detalle</button>
-    </div>`;
+  pop.innerHTML=`<button class="map-popup-close" onclick="document.getElementById('map-popup').classList.remove('show')">×</button><div class="map-popup-content"><h4>${p.tipo} · ${p.sector}</h4><p>${p.ciudad}</p><strong>$${p.precio.toLocaleString()}${p.op==='Alquiler'?'/mes':''}</strong><small>${p.m2} m²${p.hab>0?' · '+p.hab+' hab.':''} · ${p.ban} baño${p.ban>1?'s':''}</small><button onclick="openModal(${p.id});document.getElementById('map-popup').classList.remove('show')">Ver detalle</button></div>`;
   pop.classList.add('show');
   document.querySelectorAll('.map-price-pin').forEach(p=>p.classList.remove('act'));
   pinEl.classList.add('act');
@@ -710,10 +747,6 @@ function showMapPopup(p,pinEl){
 
 let drawTool=null;
 function activateDraw(t){
-  drawTool=t;
-  document.getElementById('mc-rect').classList.toggle('act',t==='rect');
-  document.getElementById('mc-circle').classList.toggle('act',t==='circle');
-  document.getElementById('mc-clear').style.display='';
   const map=document.getElementById('map');
   const existing=map.querySelector('.draw-zone');
   if(existing)existing.remove();
@@ -721,33 +754,22 @@ function activateDraw(t){
   zone.className='draw-zone';
   zone.style.cssText+=`;${t==='circle'?'border-radius:50%;width:200px;height:200px;left:45%;top:50%;':'width:280px;height:180px;left:40%;top:50%;'}`;
   map.appendChild(zone);
-  showToast('Zona dibujada. En producción esto filtrará las propiedades en esa zona.');
-  drawTool=null;
-  document.getElementById('mc-rect').classList.remove('act');
-  document.getElementById('mc-circle').classList.remove('act');
+  document.getElementById('mc-clear').style.display='';
+  showToast('Zona dibujada. En producción esto filtrará las propiedades dentro.');
 }
-function clearDraw(){
-  const z=document.getElementById('map').querySelector('.draw-zone');
-  if(z)z.remove();
-  document.getElementById('mc-clear').style.display='none';
-}
+function clearDraw(){const z=document.getElementById('map').querySelector('.draw-zone');if(z)z.remove();document.getElementById('mc-clear').style.display='none';}
 function locateMe(){showToast('En producción esto centrará el mapa en tu ubicación real');}
 
 // ═══════════ FILTERS ═══════════
-function setOp(op,btn){
-  currentHeroOp=op;
-  document.querySelectorAll('.op-tab').forEach(b=>b.classList.remove('act'));
-  btn.classList.add('act');
-}
+function setOp(op,btn){currentHeroOp=op;document.querySelectorAll('.op-tab').forEach(b=>b.classList.remove('act'));btn.classList.add('act');}
 
-function applyFilters(){
+function filteredList(){
   const txt=(document.getElementById('hs-txt').value||'').toLowerCase().split('—')[0].trim();
   const tipoHero=(document.getElementById('hs-tipo').value||'').toLowerCase();
   const pMin=parseFloat(document.getElementById('hs-pmin').value)||0;
   const pMax=parseFloat(document.getElementById('hs-pmax').value)||Infinity;
   const m2Min=parseFloat(document.getElementById('hs-m2').value)||0;
-
-  filtered=props.filter(p=>{
+  return allProps().filter(p=>{
     const mTxt=!txt||p.ciudad.toLowerCase().includes(txt)||p.sector.toLowerCase().includes(txt);
     const mTipoHero=!tipoHero||p.tipo.toLowerCase().includes(tipoHero);
     const mTipo=filterTipo==='todos'||p.tipo.toLowerCase().includes(filterTipo);
@@ -756,8 +778,8 @@ function applyFilters(){
     const mM2=p.m2>=m2Min;
     return mTxt&&mTipoHero&&mTipo&&mOp&&mPrice&&mM2;
   });
-  renderCards(filtered);
 }
+function applyFilters(){renderCards(filteredList());}
 
 // ═══════════ RENDER ═══════════
 function cardHTML(p){
@@ -779,40 +801,112 @@ function cardHTML(p){
     </div>
   </div>`;
 }
-
 function renderCards(list){
   const g=document.getElementById('prop-grid');
   const c=document.getElementById('res-count');
   if(c)c.textContent=list.length+' resultado'+(list.length!==1?'s':'');
-  g.innerHTML=list.length?list.map(cardHTML).join(''):'<div class="no-res"><i class="ti ti-building-off" style="font-size:40px;display:block;margin-bottom:8px"></i>No se encontraron propiedades con estos filtros</div>';
+  g.innerHTML=list.length?list.map(cardHTML).join(''):'<div class="no-res"><i class="ti ti-building-off" style="font-size:40px;display:block;margin-bottom:8px"></i>No se encontraron propiedades</div>';
 }
-
-function renderFeatured(){
-  document.getElementById('home-feat-grid').innerHTML=props.slice(0,3).map(cardHTML).join('');
-}
-
+function renderFeatured(){document.getElementById('home-feat-grid').innerHTML=baseProps.slice(0,3).map(cardHTML).join('');}
 function renderAgents(){
-  document.getElementById('agents-grid').innerHTML=agents.map(a=>`
-    <div class="ag-card">
-      <div class="ag-av" style="background:${a.color}">${a.ini}</div>
-      <div class="ag-name">${a.name}</div>
-      <div class="ag-agency">${a.agency}</div>
-      <div class="ag-city"><i class="ti ti-map-pin" style="vertical-align:-2px"></i> ${a.city}</div>
-      <div class="ag-stats"><span><strong>${a.props}</strong> prop.</span><span><strong>${a.years}</strong> años exp.</span></div>
-      <button class="btn-ag" onclick="showToast('Conectando con ${a.name}...')"><i class="ti ti-brand-whatsapp"></i> Contactar</button>
-    </div>`).join('');
+  document.getElementById('agents-grid').innerHTML=agents.map(a=>{
+    const propCount=baseProps.filter(p=>p.owner===a.email).length;
+    return `<div class="ag-card" onclick="showAgentProfile(${a.id})"><div class="ag-av" style="background:${a.color}">${a.ini}</div><div class="ag-name">${a.name}</div><div class="ag-agency">${a.agency}</div><div class="ag-city"><i class="ti ti-map-pin" style="vertical-align:-2px"></i> ${a.city}</div><div class="ag-stats"><span><strong>${propCount}</strong> prop.</span><span><strong>${a.years}</strong> años exp.</span></div><button class="btn-ag" onclick="event.stopPropagation();showAgentProfile(${a.id})"><i class="ti ti-user"></i> Ver perfil</button></div>`;
+  }).join('');
 }
 
-// ═══════════ MODAL ═══════════
+let currentAgentId=null, agentPropFilter='todos';
+
+function showAgentProfile(id){
+  currentAgentId=id;
+  agentPropFilter='todos';
+  showPage('agent-profile');
+  renderAgentProfile();
+}
+
+function renderAgentProfile(){
+  const a=agents.find(x=>x.id===currentAgentId);
+  if(!a)return;
+  const agentProps=baseProps.filter(p=>p.owner===a.email);
+  const ventaCount=agentProps.filter(p=>p.op==='Venta').length;
+  const alqCount=agentProps.filter(p=>p.op==='Alquiler').length;
+  const stars='★★★★★'.slice(0,Math.round(a.rating))+'☆☆☆☆☆'.slice(0,5-Math.round(a.rating));
+
+  document.getElementById('ap-header').innerHTML=`
+    <div class="ap-avatar" style="background:${a.color}">${a.ini}</div>
+    <div class="ap-info">
+      <h1>${a.name}</h1>
+      <div class="ap-agency"><i class="ti ti-building-skyscraper" style="vertical-align:-2px"></i> ${a.agency}</div>
+      <div class="ap-meta">
+        <span><i class="ti ti-map-pin"></i> ${a.city}, Venezuela</span>
+        <span><i class="ti ti-clock"></i> ${a.years} años de experiencia</span>
+      </div>
+      <div class="ap-rating"><span class="stars">${stars}</span> <strong>${a.rating}</strong> · ${a.reviews} reseñas</div>
+    </div>
+    <div class="ap-actions">
+      <button class="btn-wa" onclick="contactAgentWA(${a.id})" style="flex:none"><i class="ti ti-brand-whatsapp"></i> WhatsApp</button>
+      <button class="btn-mail" onclick="contactAgentMail(${a.id})" style="flex:none"><i class="ti ti-mail"></i> Mensaje</button>
+    </div>`;
+
+  document.getElementById('ap-stats-row').innerHTML=`
+    <div class="ap-stat"><strong>${agentProps.length}</strong><small>Propiedades activas</small></div>
+    <div class="ap-stat"><strong>${ventaCount}</strong><small>En venta</small></div>
+    <div class="ap-stat"><strong>${alqCount}</strong><small>En alquiler</small></div>
+    <div class="ap-stat"><strong>${a.years}+</strong><small>Años de experiencia</small></div>`;
+
+  document.getElementById('ap-bio').innerHTML=`
+    <h3>Sobre ${a.name.split(' ')[0]}</h3>
+    <p>${a.bio}</p>
+    <div style="margin-top:.75rem;display:flex;gap:6px;flex-wrap:wrap">
+      ${a.specialties.map(s=>`<span style="background:#f4f7fb;color:#0f3460;padding:4px 10px;border-radius:20px;font-size:11px"><i class="ti ti-star" style="vertical-align:-2px"></i> ${s}</span>`).join('')}
+    </div>`;
+
+  document.getElementById('ap-props-title').textContent=`Propiedades de ${a.name.split(' ')[0]} (${agentProps.length})`;
+
+  document.getElementById('ap-tab-filter').innerHTML=`
+    <button class="chip ${agentPropFilter==='todos'?'act':''}" onclick="setAgentFilter('todos')">Todas (${agentProps.length})</button>
+    <button class="chip ${agentPropFilter==='venta'?'act':''}" onclick="setAgentFilter('venta')">En venta (${ventaCount})</button>
+    <button class="chip ${agentPropFilter==='alquiler'?'act':''}" onclick="setAgentFilter('alquiler')">En alquiler (${alqCount})</button>`;
+
+  const filteredAgentProps=agentPropFilter==='todos'?agentProps:agentProps.filter(p=>(agentPropFilter==='venta'&&p.op==='Venta')||(agentPropFilter==='alquiler'&&p.op==='Alquiler'));
+  const grid=document.getElementById('ap-props-grid');
+  grid.innerHTML=filteredAgentProps.length?filteredAgentProps.map(cardHTML).join(''):'<div class="no-res"><i class="ti ti-building-off" style="font-size:40px;display:block;margin-bottom:8px"></i>Este agente no tiene propiedades en esta categoría</div>';
+}
+
+function setAgentFilter(f){agentPropFilter=f;renderAgentProfile();}
+
+function contactAgentWA(id){
+  const a=agents.find(x=>x.id===id);
+  if(!a)return;
+  const phone=a.phone.replace(/[^0-9]/g,'');
+  const msg=encodeURIComponent(`Hola ${a.name.split(' ')[0]}, vi tu perfil en VeneInmo y me gustaría obtener información sobre tus propiedades.`);
+  window.open(`https://wa.me/${phone}?text=${msg}`,'_blank');
+  showToast('Abriendo WhatsApp...');
+}
+
+function contactAgentMail(id){
+  const a=agents.find(x=>x.id===id);
+  if(!a)return;
+  if(!session){pendingAction={type:'agent-mail',id};openLogin('Inicia sesión para enviar un mensaje al agente');return;}
+  currentPropertyId=null;
+  document.getElementById('contact-sub').textContent=`Tu mensaje llegará a ${a.name} (${a.agency})`;
+  document.getElementById('ct-subject').value=`Consulta para ${a.name.split(' ')[0]}`;
+  document.getElementById('ct-msg').value='';
+  document.getElementById('contact-modal').classList.add('open');
+  window._contactAgent=a;
+}
+
+// ═══════════ MODAL PROPIEDAD ═══════════
 function openModal(id){
-  const p=[...props,...myPublications].find(x=>x.id===id);
+  const p=allProps().find(x=>x.id===id);
   if(!p)return;
+  currentPropertyId=id;
   document.getElementById('m-img').textContent=p.emoji;
   document.getElementById('m-img').style.background=p.op==='Venta'?'#eef2f8':'#f0f8ef';
   document.getElementById('m-title').textContent=`${p.tipo} en ${p.sector}`;
   document.getElementById('m-price').innerHTML=`$${p.precio.toLocaleString()} <small>${p.op==='Alquiler'?'/mes':' USD'}</small>`;
   document.getElementById('m-loc').textContent=`${p.ciudad}, Venezuela · ${p.m2} m²`;
-  document.getElementById('m-badge').innerHTML=`<span style="background:${p.op==='Venta'?'#e8f4e8':'#e8ecf8'};color:${p.op==='Venta'?'#2d6a2d':'#1a3a7a'};padding:3px 10px;border-radius:6px;font-size:11px">${p.op}</span>`;
+  document.getElementById('m-badge').innerHTML=`<span style="background:${p.op==='Venta'?'#e8f4e8':'#e8ecf8'};color:${p.op==='Venta'?'#2d6a2d':'#1a3a7a'};padding:3px 10px;border-radius:6px;font-size:11px">${p.op}</span> <span style="font-size:11px;color:#999;margin-left:8px"><i class="ti ti-user"></i> ${p.ownerName||'Anunciante'}</span>`;
   document.getElementById('m-desc').textContent=p.desc;
   document.getElementById('m-feats').innerHTML=[
     p.hab>0?`<span class="mfeat"><i class="ti ti-bed"></i>${p.hab} habitaciones</span>`:'',
@@ -825,15 +919,66 @@ function openModal(id){
 function closeModal(){document.getElementById('modal').classList.remove('open')}
 function closeModalBg(e){if(e.target===document.getElementById('modal'))closeModal()}
 
-function toggleFav(e,id){
-  e.stopPropagation();
-  if(!session){
-    pendingAction={type:'fav',id};
-    openLogin('Inicia sesión para guardar favoritos');
+function contactWA(){
+  const p=allProps().find(x=>x.id===currentPropertyId);
+  if(!p)return;
+  closeModal();
+  const phone=(p.ownerPhone||'').replace(/[^0-9]/g,'');
+  const msg=encodeURIComponent(`Hola, vi tu publicación de ${p.tipo} en ${p.sector} ($${p.precio.toLocaleString()}) en VeneInmo y me interesa.`);
+  window.open(`https://wa.me/${phone}?text=${msg}`,'_blank');
+  showToast('Abriendo WhatsApp...');
+}
+
+// ═══════════ CONTACT MODAL ═══════════
+function openContact(){
+  if(!session){pendingAction={type:'contact',id:currentPropertyId};openLogin('Inicia sesión para enviar un mensaje');return;}
+  const p=allProps().find(x=>x.id===currentPropertyId);
+  if(!p)return;
+  closeModal();
+  document.getElementById('contact-sub').textContent=`Tu mensaje llegará a ${p.ownerName} sobre "${p.tipo} en ${p.sector}"`;
+  document.getElementById('ct-subject').value=`Interés en ${p.tipo} en ${p.sector}`;
+  document.getElementById('ct-msg').value='';
+  document.getElementById('contact-modal').classList.add('open');
+}
+function closeContact(){document.getElementById('contact-modal').classList.remove('open')}
+function closeContactBg(e){if(e.target===document.getElementById('contact-modal'))closeContact()}
+
+function sendContact(){
+  const subject=document.getElementById('ct-subject').value.trim();
+  const body=document.getElementById('ct-msg').value.trim();
+  if(!subject||!body){showToast('Completa el asunto y el mensaje');return;}
+
+  // Mensaje a agente (sin propiedad específica)
+  if(window._contactAgent){
+    const a=window._contactAgent;
+    const msg={id:Date.now(),from:session.email,fromName:session.name,to:a.email,toName:a.name,propertyId:null,propertyTitle:`Mensaje directo a ${a.name}`,subject,body,date:new Date().toISOString()};
+    messages.push(msg);saveMsgs();
+    closeContact();
+    const mailto=`mailto:${a.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body+'\n\n— Enviado por '+session.name+' a través de VeneInmo')}`;
+    setTimeout(()=>{window.location.href=mailto;},300);
+    showToast('Mensaje enviado al agente');
+    window._contactAgent=null;
     return;
   }
+
+  // Mensaje sobre propiedad
+  const p=allProps().find(x=>x.id===currentPropertyId);
+  if(!p)return;
+  const msg={id:Date.now(),from:session.email,fromName:session.name,to:p.owner,toName:p.ownerName,propertyId:p.id,propertyTitle:`${p.tipo} en ${p.sector}`,subject,body,date:new Date().toISOString()};
+  messages.push(msg);saveMsgs();
+  closeContact();
+  const mailto=`mailto:${p.owner}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body+'\n\n— Enviado por '+session.name+' a través de VeneInmo')}`;
+  setTimeout(()=>{window.location.href=mailto;},300);
+  showToast('Mensaje enviado y abriendo tu cliente de correo...');
+}
+
+// ═══════════ FAVORITES ═══════════
+function toggleFav(e,id){
+  e.stopPropagation();
+  if(!session){pendingAction={type:'fav',id};openLogin('Inicia sesión para guardar favoritos');return;}
   if(favorites.has(id)){favorites.delete(id);showToast('Eliminado de favoritos');}
   else{favorites.add(id);showToast('Agregado a favoritos');}
+  saveFavs();
   const btn=document.getElementById('fav-'+id);
   if(btn)btn.classList.toggle('act');
 }
@@ -841,59 +986,69 @@ function toggleFav(e,id){
 function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2800)}
 
 // ═══════════ AUTH ═══════════
-let loginMode='login';
 function setLoginMode(m,btn){
   loginMode=m;
   document.querySelectorAll('.ltab').forEach(b=>b.classList.remove('act'));
   btn.classList.add('act');
   document.getElementById('signup-fields').style.display=m==='signup'?'block':'none';
   document.getElementById('lg-btn').textContent=m==='signup'?'Crear cuenta':'Iniciar sesión';
+  document.getElementById('pass-hint').style.display=m==='signup'?'block':'none';
 }
 function requireAuth(action){
-  if(session){
-    if(action==='publish')showPage('publish');
-    return;
-  }
+  if(session){if(action==='publish')showPage('publish');return;}
   pendingAction={type:'page',target:action};
   openLogin('Inicia sesión para continuar');
 }
 function openLogin(subText){
-  document.getElementById('login-sub').textContent=subText||'Inicia sesión para continuar';
+  document.getElementById('login-sub').textContent=subText||'Accede a tu cuenta o crea una nueva';
   document.getElementById('login-modal').classList.add('open');
 }
-function closeLogin(){
-  document.getElementById('login-modal').classList.remove('open');
-  pendingAction=null;
-}
+function closeLogin(){document.getElementById('login-modal').classList.remove('open');pendingAction=null;}
 function closeLoginBg(e){if(e.target===document.getElementById('login-modal'))closeLogin();}
 
-function doLogin(){
-  const email=document.getElementById('lg-email').value.trim();
-  const pass=document.getElementById('lg-pass').value.trim();
+function doAuth(){
+  const email=document.getElementById('lg-email').value.trim().toLowerCase();
+  const pass=document.getElementById('lg-pass').value;
   if(!email||!pass){showToast('Completa correo y contraseña');return;}
-  let name;
+  if(!email.includes('@')){showToast('Ingresa un correo válido');return;}
+
   if(loginMode==='signup'){
-    name=document.getElementById('lg-name').value.trim();
-    if(!name){showToast('Ingresa tu nombre');return;}
+    const name=document.getElementById('lg-name').value.trim();
+    const country=document.getElementById('lg-country').value;
+    const year=parseInt(document.getElementById('lg-year').value);
+    if(!name){showToast('Ingresa tu nombre completo');return;}
+    if(!country){showToast('Selecciona tu país');return;}
+    if(!year||year<1920||year>2010){showToast('Año de nacimiento inválido');return;}
+    if(pass.length<6){showToast('La contraseña debe tener mínimo 6 caracteres');return;}
+    if(users[email]){showToast('Ese correo ya está registrado. Inicia sesión.');return;}
+    users[email]={name,country,year,email,passHash:hashPass(pass),role:null,createdAt:new Date().toISOString()};
+    saveUsers();
+    session={email,name};
+    saveSession();
+    showToast('¡Cuenta creada! Bienvenido a VeneInmo, '+name.split(' ')[0]);
   } else {
-    name=email.split('@')[0].replace(/[._-]/g,' ');
-    name=name.charAt(0).toUpperCase()+name.slice(1);
+    const u=users[email];
+    if(!u){showToast('Esa cuenta no existe. Regístrate primero.');return;}
+    if(u.passHash!==hashPass(pass)){showToast('Contraseña incorrecta');return;}
+    session={email,name:u.name};
+    saveSession();
+    showToast('¡Bienvenido de nuevo, '+u.name.split(' ')[0]+'!');
   }
-  session={name,email,role:null};
+
   updateNavSession();
   closeLogin();
-  showToast(loginMode==='signup'?'¡Cuenta creada exitosamente!':'¡Sesión iniciada!');
-  // Ejecutar acción pendiente
+  // Ejecuta acción pendiente
   if(pendingAction){
-    if(pendingAction.type==='page'&&pendingAction.target==='publish') showPage('publish');
-    if(pendingAction.type==='fav') toggleFav({stopPropagation(){}},pendingAction.id);
+    if(pendingAction.type==='page'&&pendingAction.target==='publish')showPage('publish');
+    else if(pendingAction.type==='fav')toggleFav({stopPropagation(){}},pendingAction.id);
+    else if(pendingAction.type==='contact'){currentPropertyId=pendingAction.id;openContact();}
     pendingAction=null;
   }
 }
 
 function logout(){
-  session=null;
-  favorites=new Set();
+  session=null;saveSession();
+  favorites=new Set();saveFavs();
   updateNavSession();
   showPage('home');
   showToast('Sesión cerrada');
@@ -903,16 +1058,9 @@ function updateNavSession(){
   const nr=document.getElementById('nav-right-content');
   if(session){
     const initials=session.name.split(' ').map(x=>x[0]).slice(0,2).join('').toUpperCase();
-    nr.innerHTML=`
-      <div class="user-chip" onclick="showPage('user')">
-        <div class="user-chip-av">${initials}</div>
-        <span>${session.name.split(' ')[0]}</span>
-      </div>
-      <button class="btn-nav btn-solid" onclick="requireAuth('publish')">+ Publicar</button>`;
+    nr.innerHTML=`<div class="user-chip" onclick="showPage('user')"><div class="user-chip-av">${initials}</div><span>${session.name.split(' ')[0]}</span></div><button class="btn-nav btn-solid" onclick="requireAuth('publish')">+ Publicar</button>`;
   } else {
-    nr.innerHTML=`
-      <button class="btn-nav btn-outline" onclick="openLogin()">Acceder</button>
-      <button class="btn-nav btn-solid" onclick="requireAuth('publish')">+ Publicar gratis</button>`;
+    nr.innerHTML=`<button class="btn-nav btn-outline" onclick="openLogin()">Acceder</button><button class="btn-nav btn-solid" onclick="requireAuth('publish')">+ Publicar gratis</button>`;
   }
 }
 
@@ -920,56 +1068,72 @@ function updateNavSession(){
 function showUserTab(tab,btn){
   document.querySelectorAll('.utab').forEach(b=>b.classList.remove('act'));
   btn.classList.add('act');
-  ['profile','favs','myprops'].forEach(t=>document.getElementById('utab-'+t).style.display='none');
+  ['profile','favs','myprops','msgs'].forEach(t=>document.getElementById('utab-'+t).style.display='none');
   document.getElementById('utab-'+tab).style.display='block';
   if(tab==='favs')renderFavs();
   if(tab==='myprops')renderMyProps();
+  if(tab==='msgs')renderMsgs();
 }
 
 function setRole(r){
   if(!session)return;
-  session.role=r;
+  const u=users[session.email];
+  if(u){u.role=r;saveUsers();}
   document.getElementById('role-arr').classList.toggle('act',r==='arrendador');
   document.getElementById('role-tnt').classList.toggle('act',r==='arrendatario');
   document.getElementById('user-role-tag').textContent=r==='arrendador'?'🔑 Arrendador':'🏠 Arrendatario';
-  showToast('Perfil actualizado');
+  showToast('Rol actualizado');
 }
 
 function renderUserPage(){
   if(!session)return;
+  const u=users[session.email]||{};
   const initials=session.name.split(' ').map(x=>x[0]).slice(0,2).join('').toUpperCase();
   document.getElementById('user-av-big').textContent=initials;
   document.getElementById('user-name').textContent=session.name;
   document.getElementById('user-email').textContent=session.email;
-  if(session.role){
-    document.getElementById('user-role-tag').textContent=session.role==='arrendador'?'🔑 Arrendador':'🏠 Arrendatario';
-    document.getElementById('role-arr').classList.toggle('act',session.role==='arrendador');
-    document.getElementById('role-tnt').classList.toggle('act',session.role==='arrendatario');
+  if(u.role){
+    document.getElementById('user-role-tag').textContent=u.role==='arrendador'?'🔑 Arrendador':'🏠 Arrendatario';
+    document.getElementById('role-arr').classList.toggle('act',u.role==='arrendador');
+    document.getElementById('role-tnt').classList.toggle('act',u.role==='arrendatario');
   } else {
     document.getElementById('user-role-tag').textContent='Sin definir';
   }
+  const age=u.year?(new Date().getFullYear()-u.year):'—';
+  document.getElementById('user-data-grid').innerHTML=`
+    <div class="data-item"><label>Nombre completo</label><p>${u.name||session.name}</p></div>
+    <div class="data-item"><label>Correo</label><p>${session.email}</p></div>
+    <div class="data-item"><label>País</label><p>${u.country||'—'}</p></div>
+    <div class="data-item"><label>Año de nacimiento</label><p>${u.year||'—'} <small style="color:#999">(${age} años)</small></p></div>
+    <div class="data-item" style="grid-column:1/-1"><label>Cuenta creada</label><p>${u.createdAt?new Date(u.createdAt).toLocaleDateString('es-VE',{day:'numeric',month:'long',year:'numeric'}):'—'}</p></div>
+  `;
 }
 
 function renderFavs(){
   const c=document.getElementById('favs-list');
-  const favProps=props.filter(p=>favorites.has(p.id));
-  if(!favProps.length){
-    c.innerHTML='<div class="user-empty"><i class="ti ti-heart-off"></i>Aún no tienes favoritos<br><small>Marca las propiedades con el corazón para guardarlas aquí</small></div>';
-    return;
-  }
+  const favProps=allProps().filter(p=>favorites.has(p.id));
+  if(!favProps.length){c.innerHTML='<div class="user-empty"><i class="ti ti-heart-off"></i>Aún no tienes favoritos<br><small>Marca las propiedades con el corazón para guardarlas aquí</small></div>';return;}
   c.innerHTML=`<div class="prop-grid">${favProps.map(cardHTML).join('')}</div>`;
 }
-
 function renderMyProps(){
   const c=document.getElementById('myprops-list');
-  if(!myPublications.length){
-    c.innerHTML='<div class="user-empty"><i class="ti ti-building-off"></i>No has publicado propiedades aún<br><button class="btn-nav btn-solid" style="margin-top:12px" onclick="requireAuth(\'publish\')">+ Publicar mi primera propiedad</button></div>';
-    return;
-  }
-  c.innerHTML=`<div class="prop-grid">${myPublications.map(cardHTML).join('')}</div>`;
+  const mine=myPublications.filter(p=>p.owner===session.email);
+  if(!mine.length){c.innerHTML='<div class="user-empty"><i class="ti ti-building-off"></i>No has publicado propiedades aún<br><button class="btn-nav btn-solid" style="margin-top:12px" onclick="requireAuth(\'publish\')">+ Publicar mi primera propiedad</button></div>';return;}
+  c.innerHTML=`<div class="prop-grid">${mine.map(cardHTML).join('')}</div>`;
+}
+function renderMsgs(){
+  const c=document.getElementById('msgs-list');
+  const mine=messages.filter(m=>m.from===session.email||m.to===session.email);
+  if(!mine.length){c.innerHTML='<div class="user-empty"><i class="ti ti-mail-off"></i>Sin mensajes aún<br><small>Cuando contactes a un propietario o recibas un mensaje aparecerá aquí</small></div>';return;}
+  c.innerHTML=mine.sort((a,b)=>b.date.localeCompare(a.date)).map(m=>{
+    const isSent=m.from===session.email;
+    const otherName=isSent?m.toName:m.fromName;
+    const dateStr=new Date(m.date).toLocaleDateString('es-VE',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
+    return `<div class="msg-thread"><div class="msg-thread-head"><strong>${isSent?'➜ '+otherName:'← '+otherName}</strong><small>${dateStr}</small></div><p><strong style="color:#1a1a1a">${m.subject}</strong> — ${m.body}</p><span class="msg-prop-link"><i class="ti ti-building" style="vertical-align:-2px"></i> ${m.propertyTitle}</span></div>`;
+  }).join('');
 }
 
-// ═══════════ PUBLISH FORM ═══════════
+// ═══════════ PUBLISH ═══════════
 function submitForm(){
   if(!session){requireAuth('publish');return;}
   const op=document.getElementById('f-op').value;
@@ -982,45 +1146,31 @@ function submitForm(){
   const ban=document.getElementById('f-ban').value;
   const desc=document.getElementById('f-desc').value.trim();
   const tel=document.getElementById('f-tel').value.trim();
-
-  if(!sector||!precio||!m2||!desc||!tel){
-    showToast('Por favor completa todos los campos');
-    return;
-  }
-
+  if(!sector||!precio||!m2||!desc||!tel){showToast('Por favor completa todos los campos');return;}
   const newProp={
-    id:1000+myPublications.length+1,
-    tipo,op,ciudad,sector,
-    precio,m2,
-    hab:parseInt(hab)||0,
-    ban:parseInt(ban)||1,
+    id:Date.now(),tipo,op,ciudad,sector,precio,m2,
+    hab:parseInt(hab)||0,ban:parseInt(ban)||1,
     emoji:tipo==='Apartamento'?'🏢':tipo==='Casa'?'🏡':tipo==='Local'?'🏪':'🏢',
     mx:ciudad==='Caracas'?735:ciudad==='Valencia'?545:600,
     my:ciudad==='Caracas'?420:ciudad==='Valencia'?425:430,
-    desc,extras:['Publicado por '+session.name]
+    desc,owner:session.email,ownerName:session.name,ownerPhone:tel,
+    extras:['Publicado por '+session.name]
   };
   myPublications.push(newProp);
-  // Limpia el form
-  document.getElementById('f-sector').value='';
-  document.getElementById('f-precio').value='';
-  document.getElementById('f-m2').value='';
-  document.getElementById('f-desc').value='';
-  document.getElementById('f-tel').value='';
-  showToast('¡Propiedad publicada exitosamente!');
+  savePubs();
+  ['f-sector','f-precio','f-m2','f-desc','f-tel'].forEach(id=>document.getElementById(id).value='');
+  showToast('¡Propiedad publicada!');
   showPage('user');
   showUserTab('myprops',document.querySelectorAll('.utab')[2]);
 }
 
-// Cuando entras a user page, llena los datos
-const origShowPage=showPage;
-showPage=function(p){origShowPage(p);if(p==='user')renderUserPage();};
-
 // ═══════════ INIT ═══════════
+loadFromStorage();
 renderMap();
 renderFeatured();
-renderCards(props);
+renderCards(baseProps);
 renderAgents();
-renderMapPins(props);
+renderMapPins(baseProps);
 updateNavSession();
 </script>
 </body>
